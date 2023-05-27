@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title  class="ion-text-center">Los Alpes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="ion-text-center">Login</h1>
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="username" label="User" label-placement="floating" 
+       fill="Outline" placeholder="Enter username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password" label="Password" type="password"  label-placement="floating" 
+       fill="Outline" placeholder="Enter a password" class="primary-input"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding">
+    <ion-button expand="full" (click)="login()">Iniciar sesión</ion-button>
+  </div>
+</ion-content>
